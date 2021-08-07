@@ -3,6 +3,7 @@
 ## Snakemake pipeline to run kallisto on slurm cluster. 
 This pipeline can be run on multiple fastq files at the same time. Specify the list of samples in "samples.tsv".
 Run the pipeline with the following command:
+
 `sbatch sbatch.sh`
 
 This command submits a parent job to run snakemake. Then snakemake will automatically submit new jobs in parallel into the cluster.
