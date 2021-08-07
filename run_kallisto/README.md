@@ -6,7 +6,7 @@ Run the pipeline with the following command:
 
 `sbatch sbatch.sh`
 
-This command submits a parent job to run snakemake. Then snakemake will automatically submit new jobs in parallel into the cluster.
+This command submits a parent job which will run the snakemake script. Then based on the defined rules, snakemake will automatically submit new jobs in parallel into the cluster.
 
 ## Notes
  - Genral cluster settings (e.g. email notification) should be added to cluster_config.yaml and rule specific settings (e.g. number of threads, memory, time, etc.) should be added to params of the rule in the snake file.
